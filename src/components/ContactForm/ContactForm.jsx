@@ -17,9 +17,6 @@ export class ContactForm extends Component {
   handleChange = e => {
     const { name, value } = e.currentTarget;
     this.setState({ [name]: value });
-    console.log(e.currentTarget.value);
-    console.log(e.currentTarget.name);
-    console.log(this.state);
   };
 
   handleSubmit = e => {

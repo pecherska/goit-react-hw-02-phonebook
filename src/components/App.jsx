@@ -26,8 +26,6 @@ export class App extends Component {
       id: nanoid(),
     };
     this.setState(({ contacts }) => ({ contacts: [newContact, ...contacts] }));
-    // console.log(newContact);
-    // console.log(this.state.contacts.name === newContact.name);
   };
   // очікуємо id контакта який хочемо видалити. хочемо змінити стан від попереднього. потрібно видалити об'єкт з масива.
   // беремо всі контакти, для кожного перевіряємо id, якщо contact.id не дорівняє id його повертають
