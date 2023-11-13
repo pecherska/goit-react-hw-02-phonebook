@@ -1,9 +1,9 @@
-import FilterContainer from './Filter.styled';
+import { FilterContainer, FilterInpur } from './Filter.styled';
 const Filter = ({ name, onChange }) => {
   return (
     <FilterContainer>
       <label>Find contacts by name</label>
-      <input type="text" value={name} onChange={onChange}></input>
+      <FilterInpur type="text" value={name} onChange={onChange}></FilterInpur>
     </FilterContainer>
   );
 };
